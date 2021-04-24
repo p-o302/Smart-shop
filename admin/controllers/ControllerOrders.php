@@ -4,7 +4,7 @@
 		use ModelOrders;
 		public function index(){
 			//quy dinh so ban ghi tren mot trang
-			$recordPerPage = 25;
+			$recordPerPage = 10;
 			//tinh so trang
 			$numPage = ceil($this->modelTotal()/$recordPerPage);
 			//goi ham de lay du lieu

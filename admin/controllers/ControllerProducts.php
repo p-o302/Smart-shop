@@ -6,7 +6,7 @@
 		use ModelProducts;
 		public function index(){
 			//quy dinh so ban ghi tren mot trang
-			$recordPerPage = 40;
+			$recordPerPage = 15;
 			//tinh so trang
 			$numPage = ceil($this->modelTotalRecord()/$recordPerPage);
 			//lay du lieu tu model

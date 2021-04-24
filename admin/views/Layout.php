@@ -48,7 +48,7 @@
                                 <!-- <span class="hidden-xs"></span> -->
                                 <span>
                                     <?php if (isset($_SESSION["email"])) : ""?>
-                                        <?php echo $_SESSION["email"]; ?></a>
+                                        <?php echo $_SESSION["name"]; ?></a>
                                     <?php endif; ?> 
                                 </span>
                         </a>

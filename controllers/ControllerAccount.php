@@ -20,7 +20,7 @@
 		// xem danh sach cac don hang da mua
 		public function orders(){
 			//quy dinh so ban ghi tren mot trang
-			$recordPerPage = 25;
+			$recordPerPage = 10;
 			//tinh so trang
 			$numPage = ceil($this->modelTotal()/$recordPerPage);
 			//goi ham de lay du lieu
