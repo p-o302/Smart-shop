@@ -199,7 +199,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 <div class="page-head">
 	<div class="container">
-		<h3>Men's Wear</h3>
+		<h3><?php echo $this->modelCategories(); ?></h3>
 	</div>
 </div>
 <!-- //banner -->
