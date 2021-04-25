@@ -44,6 +44,7 @@
 					$query = $conn->query("select * from products where id = $id");
 					//tra ve mot ban ghi
 					return $query->fetch();
+					
 					//---
 				}
 				//huy don hnag

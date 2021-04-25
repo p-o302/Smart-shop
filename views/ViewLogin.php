@@ -2,31 +2,69 @@
   //load file LayoutTrangChu.php
   $this->fileLayout = "LayoutTrangTrong.php";
  ?>
-<div class="template-customer">
-          <h1>Đăng nhập tài khoản</h1>
-          <p>Nếu bạn có tài khoản xin vui lòng đăng nhập</p>
-          <div class="row" style="margin-top:50px;">
-            <div class="col-md-6">
-              <div class="wrapper-form">
-                <form method='post' action="index.php?controller=account&action=loginPost">
-                  <p class="title"><span>Đăng nhập tài khoản</span></p>
-                  <div class="form-group">
-                    <label>Email:<b id="req">*</b></label>
-                    <input type="email" class="input-control" name="email" required="">
-                  </div>
-                  <div class="form-group">
-                    <label>Mật khẩu:<b id="req">*</b></label>
-                    <input type="password" class="input-control" name="password" required="">
-                  </div>
-                  <input type="submit" class="button" value="Đăng nhập">
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="wrapper-form">
-                <p class="title"><span>Tạo tài khoản mới</span></p>
-                <p>Đăng ký tài khoản để mua hàng nhanh hơn. Theo dõi đơn đặt hàng, vận chuyển. Cập nhật các sự kiện và chương trình giảm giá của chúng tôi.</p>
-                <a href="/Account/Register" class="button">Đăng ký</a> </div>
-            </div>
-          </div>
-        </div>
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="login-grids">
+								<div class="login">
+									<div class="login-bottom">
+										<h3>Sign up for free</h3>
+                    <?php if(isset($_GET["notify"])&&$_GET["notify"]=="error"): ?>
+                      <p style="color:red;">Đăng ký chưa thành công, bạn hãy kiểm tra lại thông tin!</p>
+                      <?php else: ?>
+                      <p> Nếu bạn chưa có tài khoản, hãy đăng ký ngay để nhận thông tin ưu đãi cùng những ưu đãi từ cửa hàng.</p>
+                      <?php endif; ?>
+										<form method='post' action="index.php?controller=account&action=registerPost">
+											<div class="sign-up">
+												<h4>Email :</h4>
+												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required>	
+											</div>
+											<div class="sign-up">
+												<h4>Password :</h4>
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
+												
+											</div>
+											<div class="sign-up">
+												<h4>Re-type Password :</h4>
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
+												
+											</div>
+											<div class="sign-up">
+												<input type="submit" value="REGISTER NOW" >
+											</div>
+											
+										</form>
+									</div>
+									<div class="login-right">
+										<h3>Sign in with your account</h3>
+										<form method='post' action="index.php?controller=account&action=loginPost">
+											<div class="sign-in">
+												<h4>Email :</h4>
+												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" >	
+											</div>
+											<div class="sign-in">
+												<h4>Password :</h4>
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+												<a href="#">Forgot password?</a>
+											</div>
+											<div class="single-bottom">
+												<input type="checkbox"  id="brand" value="">
+												<label for="brand"><span></span>Remember Me.</label>
+											</div>
+											<div class="sign-in">
+												<input type="submit" value="SIGNIN" >
+											</div>
+										</form>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
