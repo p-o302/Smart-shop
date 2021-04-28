@@ -20,4 +20,6 @@
  		$obj->$action();
  	}else die("File controller không tồn tại");
  ?>
+
+ <?php echo ('alo'); ?>
  

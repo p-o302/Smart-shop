@@ -175,11 +175,6 @@ label{
 .section_room select option {
     line-height: 1.8em;
 }
-/* Icons */
-.footer-bottom a {
-
-}
-
 /* pop-up text */
 .footer-bottom a span {
     color: #fff;
@@ -523,8 +518,6 @@ a.callbacks_nav.callbacks1_nav.prev {
 }
 #slider3-pager a,#slider4-pager a  {
   display: inline-block;
-}
-#slider3-pager span,#slider4-pager span{
 }
 #slider3-pager span,#slider4-pager span{
 	width:100px;
@@ -4506,7 +4499,7 @@ td.invert-image a img {
 		padding: 6px 10px;
 	}
 	.header-middle form input[type="submit"] {
-		height: 31px;
+		height: 31px !important;
 	}
 	.sear-sub {
 		float: right;

@@ -7,7 +7,7 @@ $this->fileLayout = "LayoutTrangTrong.php";
         <h2>Tìm kiếm - Giá từ <?php echo number_format($fromPrice) ?> ₫ đến <?php echo number_format($toPrice) ?>₫ </h2>
     </div>
     <div class="tabs-content row">
-        <div id="content-tabb1" class="content-tab content-tab-proindex" style="display:none">
+        <div id="content-tabb1" class="content-tab content-tab-proindex">
             <div class="clearfix">
                 <?php foreach ($data as $rows) : ?>
                     <!-- box product -->

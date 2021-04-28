@@ -5,16 +5,31 @@
  <div class="template-cart">
           <form action="index.php?controller=cart&action=update" method="post">
             <div class="table-responsive">
-              <table class="table table-cart">
+              <table class="table table-cartx" >
                 <thead>
                   <tr>
-                    <th class="image">Ảnh sản phẩm</th>
-                    <th class="name">Tên sản phẩm</th>
-                    <th class="price">Giá bán lẻ</th>
-                    <th class="quantity">Số lượng</th>
-                    <th class="price">Thành tiền</th>
+                    <th class="imagex">Ảnh sản phẩm</th>
+                    <th class="namex">Tên sản phẩm</th>
+                    <th class="pricex">Giá bán lẻ</th>
+                    <th class="quantityx">Số lượng</th>
+                    <th class="pricex">Thành tiền</th>
                     <th>Xóa</th>
                   </tr>
+                  <style>
+                    .quantity input[type="number"] {
+											    border: 1px solid #5a88ca;
+											    padding: 10px;
+											    width: 200px;
+											}
+                      .template-cart{
+                        margin-top: 15px;
+                        border: 1px solid #000;
+                        padding: 5px;
+                      }
+                      thead{background-color: rgb(253,163,14);}
+                      th{color: #fff !important;}
+                      
+                  </style>
                 </thead>
                 <?php foreach($_SESSION["cart"] as $product):  ?>              
                <tbody>
@@ -26,15 +41,22 @@
                     <td>
                          <?php echo number_format($product["price"]-($product["price"]*$product["discount"])/100); ?>dd </td>
                     <td>
-                        <input type="number" id="qty" min="1" class="input-control" value="<?php echo $product["number"]; ?>" name="product_<?php echo $product["id"]; ?>" required="Không thể để trống"></td>
+                        <input type="number" id="qty" min="1"style="width: 200px;" value="<?php echo $product["number"]; ?>" name="product_<?php echo $product["id"]; ?>" required="Không thể để trống"></td>
                     <td>
                         <p>
                             <b>
                                 <?php echo number_format(($product["price"]-($product["price"]*$product["discount"])/100)*$product["number"]); ?></b></p></td>
                     <td>
-                        <a href="index.php?controller=cart&action=delete&id=<?php echo $product["id"]; ?>" data-id="2479395"><i class="fa fa-trash"></i></a></td>
+                        <a href="index.php?controller=cart&action=delete&id=<?php echo $product["id"]; ?>" data-id="2479395" class="label1 label-warning">Hủy</a></td>
+                        
                   </tr>
                 </tbody>
+                <style>
+                  
+                  .label1{padding: 8px 5px; border-radius: 10%; color: #fff;}
+                  td img{width: 150px; height: 150px;}
+                  td a{ font-size: 16px; color: #000; font-family: serif;}
+                </style>
                 <?php endforeach; ?>
                 <tfoot>
                   <tr>
@@ -50,4 +72,4 @@
             <?php echo number_format($this->cartTotal()); ?> <br>
             <a href="index.php?controller=cart&action=chekout" class="button black">Thanh toán</a> </div>
             <?php endif; ?>
-        </div>
+</div>

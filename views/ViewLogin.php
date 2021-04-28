@@ -1,42 +1,34 @@
 <?php 
   //load file LayoutTrangChu.php
-  $this->fileLayout = "LayoutTrangTrong.php";
+  $this->fileLayout = "LayoutTrangChu.php";
  ?>
-<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>			
 						</div>
 						<div class="modal-body modal-spa">
 							<div class="login-grids">
 								<div class="login">
 									<div class="login-bottom">
 										<h3>Sign up for free</h3>
-                    <?php if(isset($_GET["notify"])&&$_GET["notify"]=="error"): ?>
-                      <p style="color:red;">Đăng ký chưa thành công, bạn hãy kiểm tra lại thông tin!</p>
-                      <?php else: ?>
-                      <p> Nếu bạn chưa có tài khoản, hãy đăng ký ngay để nhận thông tin ưu đãi cùng những ưu đãi từ cửa hàng.</p>
-                      <?php endif; ?>
 										<form method='post' action="index.php?controller=account&action=registerPost">
 											<div class="sign-up">
 												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required>	
+												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
 											</div>
 											<div class="sign-up">
 												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
-												
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											</div>
 											<div class="sign-up">
 												<h4>Re-type Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
-												
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">		
 											</div>
 											<div class="sign-up">
 												<input type="submit" value="REGISTER NOW" >
 											</div>
-											
 										</form>
 									</div>
 									<div class="login-right">
@@ -44,11 +36,11 @@
 										<form method='post' action="index.php?controller=account&action=loginPost">
 											<div class="sign-in">
 												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" >	
+												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
 											</div>
 											<div class="sign-in">
 												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
 												<a href="#">Forgot password?</a>
 											</div>
 											<div class="single-bottom">

@@ -95,13 +95,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav menu__list">
-					<li class="active menu__item "><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-					<li class="dropdown menu__item menu__item--current">
+					<li class="active menu__item menu__item--current"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown menu__item">
 						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">men's wear <span class="caret"></span></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-										<a href="mens.html"><img src="images/woo1.jpg" alt=" "/></a>
+										<a href="mens.html"><img src="assets/frontend/images/woo1.jpg" alt=" "/></a>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
@@ -109,19 +109,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<li><a href="mens.html">Wallets</a></li>
 											<li><a href="mens.html">Footwear</a></li>
 											<li><a href="mens.html">Watches</a></li>
-											<li><a href="mens.html">Accessories</a></li>
+											<li><a href="mens.html">Shirts</a></li>
 											<li><a href="mens.html">Bags</a></li>
 											<li><a href="mens.html">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="mens.html">Jewellery</a></li>
 											<li><a href="mens.html">Sunglasses</a></li>
-											<li><a href="mens.html">Perfumes</a></li>
 											<li><a href="mens.html">Beauty</a></li>
-											<li><a href="mens.html">Shirts</a></li>
-											<li><a href="mens.html">Sunglasses</a></li>
 											<li><a href="mens.html">Swimwear</a></li>
 										</ul>
 									</div>
@@ -139,32 +135,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<li><a href="womens.html">Wallets</a></li>
 											<li><a href="womens.html">Footwear</a></li>
 											<li><a href="womens.html">Watches</a></li>
-											<li><a href="womens.html">Accessories</a></li>
+											<li><a href="womens.html">Shirts</a></li>
 											<li><a href="womens.html">Bags</a></li>
 											<li><a href="womens.html">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
-											<li><a href="womens.html">Jewellery</a></li>
 											<li><a href="womens.html">Sunglasses</a></li>
-											<li><a href="womens.html">Perfumes</a></li>
 											<li><a href="womens.html">Beauty</a></li>
-											<li><a href="womens.html">Shirts</a></li>
-											<li><a href="womens.html">Sunglasses</a></li>
 											<li><a href="womens.html">Swimwear</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-6 multi-gd-img multi-gd-text ">
-										<a href="womens.html"><img src="images/woo.jpg" alt=" "/></a>
+										<a href="womens.html"><img src="assets/frontend/images/woo.jpg" alt=" "/></a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
 							</ul>
 					</li>
-					<li class=" menu__item"><a class="menu__link" href="electronics.html">Electronics</a></li>
-					<li class=" menu__item"><a class="menu__link" href="codes.html">Short Codes</a></li>
-					<li class=" menu__item "><a class="menu__link" href="contact.html">contact</a></li>
+					<li class=" menu__item">
+					<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">kid's wear <span class="caret"></span></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-3 multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="womens.html">Clothing</a></li>
+											<li><a href="womens.html">Wallets</a></li>
+											<li><a href="womens.html">Footwear</a></li>
+											<li><a href="womens.html">Watches</a></li>
+											<li><a href="womens.html">Shirts</a></li>
+											<li><a href="womens.html">Bags</a></li>
+											<li><a href="womens.html">Caps & Hats</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3 multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="womens.html">Sunglasses</a></li>
+											<li><a href="womens.html">Beauty</a></li>
+											<li><a href="womens.html">Swimwear</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-6 multi-gd-img multi-gd-text ">
+										<a href="womens.html"><img src="assets/frontend/images/pic2.jpg" alt=" "/></a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</ul>
+				</li>
+					<li class=" menu__item"><a class="menu__link" href="contact.html">contact us</a></li>
 				  </ul>
 				</div>
 			  </div>
@@ -375,16 +394,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div  id="top" class="callbacks_container">
 					<ul class="rslides" id="slider3">
 						<li>
-							<img class="img-responsive" src="images/men1.jpg" alt=" "/>
+							<img class="img-responsive" src="assets/frontend/images/men1.jpg" alt=" "/>
 						</li>
 						<li>
-							<img class="img-responsive" src="images/men2.jpg" alt=" "/>
+							<img class="img-responsive" src="assets/frontend/images/men2.jpg" alt=" "/>
 						</li>
 						<li>
-							<img class="img-responsive" src="images/men1.jpg" alt=" "/>
+							<img class="img-responsive" src="assets/frontend/images/men1.jpg" alt=" "/>
 						</li>
 						<li>
-							<img class="img-responsive" src="images/men2.jpg" alt=" "/>
+							<img class="img-responsive" src="assets/frontend/images/men2.jpg" alt=" "/>
 						</li>
 					</ul>
 				</div>
@@ -749,87 +768,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-4 sign-gd flickr-post">
 					<h4>Flickr Posts</h4>
 					<ul>
-						<li><a href="single.html"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b16.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b17.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b18.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b16.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b17.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b18.jpg" alt=" " class="img-responsive" /></a></li>
-						<li><a href="single.html"><img src="images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b16.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b17.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b18.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b16.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b17.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b18.jpg" alt=" " class="img-responsive" /></a></li>
+						<li><a href="single.html"><img src="assets/frontend/images/b15.jpg" alt=" " class="img-responsive" /></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<p class="copy-right">&copy 2016 Smart Shop. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 	</div>
 </div>
 <!-- //footer -->
 <!-- login -->
-			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="login-grids">
-								<div class="login">
-									<div class="login-bottom">
-										<h3>Sign up for free</h3>
-										<form>
-											<div class="sign-up">
-												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
-											</div>
-											<div class="sign-up">
-												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												
-											</div>
-											<div class="sign-up">
-												<h4>Re-type Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												
-											</div>
-											<div class="sign-up">
-												<input type="submit" value="REGISTER NOW" >
-											</div>
-											
-										</form>
-									</div>
-									<div class="login-right">
-										<h3>Sign in with your account</h3>
-										<form>
-											<div class="sign-in">
-												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
-											</div>
-											<div class="sign-in">
-												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												<a href="#">Forgot password?</a>
-											</div>
-											<div class="single-bottom">
-												<input type="checkbox"  id="brand" value="">
-												<label for="brand"><span></span>Remember Me.</label>
-											</div>
-											<div class="sign-in">
-												<input type="submit" value="SIGNIN" >
-											</div>
-										</form>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+<?php include "views/ViewLogin.php"; ?>
 <!-- //login -->
 </body>
 </html>
