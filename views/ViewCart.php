@@ -60,16 +60,38 @@
                 <?php endforeach; ?>
                 <tfoot>
                   <tr>
-                    <td colspan="6"><a href="index.php?controller=cart&action=destroy" class="button pull-left">Xóa toàn bộ</a> <a href="index.php?controller=home" class="button pull-right black">Tiếp tục mua hàng</a>
-                      <input type="submit" class="button pull-right" value="Cập nhật"></td>
+                    <td colspan="6"><a href="index.php?controller=cart&action=destroy" class="button1 pull-left">Xóa toàn bộ</a> <a href="index.php?controller=home" class="button2 pull-right black">Tiếp tục mua hàng</a>
+                      <input type="submit" class="button3 pull-right" value="Cập nhật"></td>
                   </tr>
                 </tfoot>
               </table>
             </div>
           </form>
           <?php if($this->cartNumber()>0): ?>
-          <div class="total-cart"> Tổng tiền thanh toán:
+          <div class="total-cart"> <h3>Tổng tiền thanh toán:</h3>
             <?php echo number_format($this->cartTotal()); ?> <br>
             <a href="index.php?controller=cart&action=chekout" class="button black">Thanh toán</a> </div>
             <?php endif; ?>
 </div>
+<style>
+    .button1, .button3, .button2{
+      padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 3px #77ca64;
+    font-size: 15px;
+    background: rgb(253,163,14);
+    }
+    .button3{
+      border: 0;
+    }
+    .button2{
+      background-color: #464646;
+      margin-left: 5px;
+    }
+    .total-cart{
+      font-family: arial;
+      text-align: right;
+    }
+</style>

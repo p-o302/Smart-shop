@@ -29,7 +29,7 @@
               background-color: #fff;
               z-index: 1;
               display: none;
-              overflow: auto;
+              overflow: hidden;
               height: 350px;
               z-index: 100;
             }

@@ -6,7 +6,7 @@ $this->fileLayout = "LayoutTrangChu.php";
   <div class="tabs-container">
     <div class="row" style="margin-top:10px;">
       <div class="col-lg-10">
-        <h2>HOT PRODUCT</h2>
+        <h3>HOT PRODUCT</h3>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -15,7 +15,7 @@ $this->fileLayout = "LayoutTrangChu.php";
     <div id="content-tabb1" class="content-tab content-tab-proindex" style="display:none">
       <div class="clearfix">
         <?php
-        $hotProduct = $this->modelHotProduct();
+       // $hotProduct = $this->modelHotProduct();
         ?>
         <style type="text/css">
           .discount {
@@ -84,8 +84,11 @@ $this->fileLayout = "LayoutTrangChu.php";
     </div>
   </div>
 </div>
+<div class="row">
+  <div class="col-xs-12 col-md-12"> <img src="assets/frontend/images/adv1.jpg" class="img-thumbnail"> </div>
+</div>
 <?php
-  $categories = $this->modelCategories();
+$categories = $this->modelCategories();
 ?>
 <?php foreach ($categories as $rowsCategory) : ?>
   <!-- category product -->
@@ -130,4 +133,3 @@ $this->fileLayout = "LayoutTrangChu.php";
   </div>
   <!-- /category product -->
 <?php endforeach; ?>
-

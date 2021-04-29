@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav menu__list">
-                <li class="active menu__item menu__item--current"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                <li class="active menu__item menu__item--current"><a class="menu__link" href="index.php">Home <span class="sr-only">(current)</span></a></li>
                 <li class="dropdown menu__item">
                   <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">men's wear <span class="caret"></span></a>
                   <ul class="dropdown-menu multi-column columns-3">
@@ -158,13 +158,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <div class="total">
               <span class="badge badge-danger"><?php echo $numberProduct; ?></span>
                 <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
-                <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+                
+                <span class=""> <?php echo number_format($this->cartTotal()); ?></span> 
+                
               </div>
-
             </h3>
           </a>
-          <p><a href="javascript:;" class="simpleCart_empty">View</a></p>
-
+          <p><a href="" class="simpleCart_empty">View</a></p>
         </div>
       </div>
       <div class="clearfix"></div>
@@ -173,7 +173,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!-- nos laf nav -->
 
   <div class="cnt" style="display: flex;">
-    <div class="cnt-left" style="display: flex; flex-direction: column;">
+    <div class="cnt-left" style="flex-direction: column;">
       <div class="panel panel-default" style="margin-top:15px;">
         <div class="panel-heading"> Tìm theo mức giá </div>
         <div class="panel-body">
@@ -190,15 +190,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </ul>
         </div>
       </div>
-
+<!-- 
       <style>
         .cnt-left {
           width: 300px;
           margin-left: 15px;
         }
-
-        
-      </style>
+      </style> -->
       <div class="css-treeview">
         <h4>Categories</h4>
         <ul class="tree-list-pad">
@@ -278,12 +276,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </ul>
           </li>
         </ul>
-        
       </div>
-
-
-      
-    </div><div class="col-xs-12 col-md-9 load">
+    </div>
+  
+    <div class="col-xs-12 col-md-9 load">
           <!-- main -->
 
           <?php echo $this->view; ?>
@@ -292,7 +288,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
   </div>
 
-<!-- coupons and footer  -->
+  <!-- coupons and footer  -->
 
       <div class="coupons">
         <div class="container">
@@ -326,7 +322,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="footer">
     <div class="container">
       <div class="col-md-3 footer-left">
-        <h2><a href="index.html"><img src="images/logo3.jpg" alt=" " /></a></h2>
+        <h2><a href="index.php"><img src="assets/frontend/images/logo3.jpg" alt=" " /></a></h2>
         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor
           sit amet, consectetur, adipisci velit, sed quia non
           numquam eius modi tempora incidunt ut labore
@@ -347,7 +343,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <div class="col-md-4 sign-gd">
             <h4>Information</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="mens.html">Men's Wear</a></li>
               <li><a href="womens.html">Women's Wear</a></li>
               <li><a href="electronics.html">Electronics</a></li>

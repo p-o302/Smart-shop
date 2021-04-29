@@ -4,7 +4,7 @@ $this->fileLayout = "LayoutTrangTrong.php";
 ?>
 <div class="special-collection">
     <div class="head-tabs head-tab1 col-lg-8">
-        <h2>Tìm kiếm - Giá từ <?php echo number_format($fromPrice) ?> ₫ đến <?php echo number_format($toPrice) ?>₫ </h2>
+        <h2>Tìm kiếm - Giá từ <?php echo number_format($fromPrice) ?> $ đến <?php echo number_format($toPrice) ?>$ </h2>
     </div>
     <div class="tabs-content row">
         <div id="content-tabb1" class="content-tab content-tab-proindex">
