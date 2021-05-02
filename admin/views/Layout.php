@@ -47,9 +47,10 @@
                                 <img src="../assets/admin/layout1/images/user2-160x160.jpg" class="user-image" alt="User Image">
                                 <!-- <span class="hidden-xs"></span> -->
                                 <span>
-                                    <?php if (isset($_SESSION["email"])) : ""?>
+                                <?php if (isset($_SESSION["email"])) : ""?>
+                                       
                                         <?php echo $_SESSION["email"]; ?></a>
-                                    <?php endif; ?> 
+                                    <?php endif; ?>  
                                 </span>
                         </a>
                         <ul class="dropdown-menu">

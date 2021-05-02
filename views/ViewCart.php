@@ -70,11 +70,11 @@
           <?php if($this->cartNumber()>0): ?>
           <div class="total-cart"> <h3>Tổng tiền thanh toán:</h3>
             <?php echo number_format($this->cartTotal()); ?> <br>
-            <a href="index.php?controller=cart&action=chekout" class="button black">Thanh toán</a> </div>
+            <a href="index.php?controller=cart&action=chekout" class="button4 black">Thanh toán</a> </div>
             <?php endif; ?>
 </div>
 <style>
-    .button1, .button3, .button2{
+    .button1, .button3, .button2, .button4{
       padding: 15px 30px;
     display: inline-block;
     color: #fff;
