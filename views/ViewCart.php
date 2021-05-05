@@ -1,6 +1,6 @@
 <?php 
 	//load file LayoutTrangChu.php
-	$this->fileLayout = "LayoutTrangTrong.php";
+ $this->fileLayout = "LayoutTrangTrong.php";
  ?>
  <div class="template-cart">
           <form action="index.php?controller=cart&action=update" method="post">

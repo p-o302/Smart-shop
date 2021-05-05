@@ -1249,6 +1249,8 @@ h2.resp-accordion {
 }
 .product-men img {
     width: 100%;
+	/* width: 181px; */
+	/* height: 189px; */
 }
 .product-easy {
     padding: 90px 0;
@@ -1281,6 +1283,7 @@ h2.resp-accordion {
 .men-thumb-item .pro-image-front {
     opacity: 1;
     visibility: visible;
+
 }
 .men-thumb-item img {
     transition: all 0.5s ease-out 0s;

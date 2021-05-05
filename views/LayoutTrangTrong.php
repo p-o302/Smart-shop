@@ -39,6 +39,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!-- header-bot -->
   <?php include "views/ViewHeader.php"; ?>
   <!-- //header-bot -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6061ba2ef7ce18270934fa7d/1f1urui5t';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="G6z3NbmD"></script>
   <!-- banner -->
   <div class="ban-top">
     <div class="container">
@@ -159,7 +176,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               <span class="badge badge-danger"><?php echo $numberProduct; ?></span>
                 <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
                 
-                <span class=""> <?php echo number_format($this->cartTotal()); ?></span> 
+                <span class=""> Payment</span> 
                 
               </div>
             </h3>
@@ -171,9 +188,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
   </div>
   <!-- nos laf nav -->
-
-  <div class="cnt" style="display: flex;">
-    <div class="cnt-left" style="flex-direction: column;">
+<style>
+.cnt{
+  display: flex;
+  width: 100%;
+}
+.cnt-left{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.load{
+  width: 1200px !important;
+}
+</style>
+  <div class="cnt">
+    <div class="cnt-left" >
       <div class="panel panel-default" style="margin-top:15px;">
         <div class="panel-heading"> Tìm theo mức giá </div>
         <div class="panel-body">
@@ -190,13 +220,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </ul>
         </div>
       </div>
-<!-- 
-      <style>
-        .cnt-left {
-          width: 300px;
-          margin-left: 15px;
-        }
-      </style> -->
+
       <div class="css-treeview">
         <h4>Categories</h4>
         <ul class="tree-list-pad">
@@ -278,7 +302,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
       </div>
     </div>
-  
     <div class="col-xs-12 col-md-9 load">
           <!-- main -->
 

@@ -2,54 +2,115 @@
 	//load file LayoutTrangChu.php
 	$this->fileLayout = "LayoutTrangTrong.php";
  ?>
- <div class="top">
-	<div class="row">
-	  <div class="col-xs-12 col-md-6 product-image">
-	    <div class="featured-image"> 
-	      <img src="assets/upload/products/<?php echo $record->photo; ?>" style="width: 100%;" class="img-responsive"/>
-	    </div>
-	  </div>
-	  <div class="col-xs-12 col-md-6 info">
-	    <h1 itemprop="name"><?php echo $record->name; ?></h1>
-	    <p itemprop="price" class="price-box product-price-box"> <span class="special-price"> <span class="price product-price" style="text-decoration:line-through;"> <?php echo number_format($record->price); ?>₫ </span></span></p>
-	    <p itemprop="price" class="price-box product-price-box"> <span class="special-price"> <span class="price product-price"> <?php echo number_format($record->price - ($record->price*$record->discount/100)); ?>₫ </span></span></p>
-	  </p>
-	  <a href="index.php?controller=cart&action=create&id=<?php echo $record->id; ?>" class="btn btn-primary">Cho vào giỏ hàng</a>
-	  <!-- rating -->
-	  <div style="border:1px solid #dddddd; margin-top: 15px;">
-	    <h4 style="padding-left: 10px;">Rating</h4>
-	    <table style="width: 100%;">
-	      <tr>
-	        <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"></td>
-	        <td><span class="label label-primary"><?php echo $this->modelGetStar($record->id,1); ?> vote</span></td>
-	      </tr>
-	      <tr>
-	        <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
-	        <td><span class="label label-warning"><?php echo $this->modelGetStar($record->id,2); ?> vote</span></td>
-	      </tr>
-	      <tr>
-	        <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
-	        <td><span class="label label-danger"><?php echo $this->modelGetStar($record->id,3); ?> vote</span></td>
-	      </tr>
-	      <tr>
-	        <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
-	        <td><span class="label label-info"><?php echo $this->modelGetStar($record->id,4); ?> vote</span></td>
-	      </tr>
-	      <tr>
-	        <td style="width: 80%; padding-left: 10px;"><img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"> <img src="assets/frontend/images/star.jpg"></td>
-	        <td><span class="label label-success"><?php echo $this->modelGetStar($record->id,5); ?> vote</span></td>
-	      </tr>
-	    </table>
-	    <br>
-	  </div>
-	  <!-- /rating -->
+<div class="single">
+	<div class="container">
+		<div class="col-md-6 single-right-left animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
+			<div class="grid images_3_of_2">
+				
+					<img src="assets/upload/news/<?php echo $record->photo; ?>" alt="">
+					<div class="clearfix"></div>
+				</div>	
+			</div>
+		</div>
+		<div class="col-md-6 single-right-left simpleCart_shelfItem animated wow slideInRight animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInRight;">
+					<h3>Asics Gel Zaraca 4 Blue Sport Shoes</h3>
+					<p><span class="item_price">$550</span> <del> $900</del></p>
+					<div class="rating1">
+						<span class="starRating">
+							<input id="rating5" type="radio" name="rating" value="5">
+							<label for="rating5">5</label>
+							<input id="rating4" type="radio" name="rating" value="4">
+							<label for="rating4">4</label>
+							<input id="rating3" type="radio" name="rating" value="3" checked="">
+							<label for="rating3">3</label>
+							<input id="rating2" type="radio" name="rating" value="2">
+							<label for="rating2">2</label>
+							<input id="rating1" type="radio" name="rating" value="1">
+							<label for="rating1">1</label>
+						</span>
+					</div>
+					<div class="description">
+						<h5>Check delivery, payment options and charges at your location</h5>
+						<input type="text" value="Enter pincode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter pincode';}" required="">
+						<input type="submit" value="Check">
+					</div>
+					<div class="color-quality">
+						<div class="color-quality-right">
+							<h5>Quality :</h5>
+							<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
+								<option value="null">5 Qty</option>
+								<option value="null">6 Qty</option> 
+								<option value="null">7 Qty</option>					
+								<option value="null">10 Qty</option>								
+							</select>
+						</div>
+					</div>
+					
+					<div class="occasion-cart">
+						<a href="index.php?controller=cart&action=create&id=<?php echo $rows->id; ?>" class="item_add hvr-outline-out button2">Add to cart</a>
+					</div>
+					
+		</div>
+				<div class="clearfix"> </div>
+
+				<div class="bootstrap-tab animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
+					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+						<ul id="myTab" class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Description</a></li>
+							<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Reviews(1)</a></li>
+							<li role="presentation" class="dropdown">
+								<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Information <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+									<li><a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">cleanse</a></li>
+									<li><a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">fanny</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active bootstrap-tab-text" id="home" aria-labelledby="home-tab">
+								<h5>Product Brief Description</h5>
+								<p><?php echo $record->content; ?>
+									<span><?php echo $record->description; ?></span></p>
+							</div>
+							<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="profile" aria-labelledby="profile-tab">
+								<div class="bootstrap-tab-text-grids">
+									<div class="bootstrap-tab-text-grid">
+										<div class="bootstrap-tab-text-grid-left">
+											<img src="images/men3.jpg" alt=" " class="img-responsive">
+										</div>
+										<div class="bootstrap-tab-text-grid-right">
+											<ul>
+												<li><a href="#">Admin</a></li>
+												<li><a href="#"><span class="glyphicon glyphicon-share" aria-hidden="true"></span>Reply</a></li>
+											</ul>
+											<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+												suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
+												vel eum iure reprehenderit.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									
+									<div class="add-review">
+										<h4>add a review</h4>
+										<form>
+											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+											<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+											
+											<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+											<input type="submit" value="SEND">
+										</form>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="dropdown1" aria-labelledby="dropdown1-tab">
+								<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+							</div>
+							<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="dropdown2" aria-labelledby="dropdown2-tab">
+								<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 	</div>
-	<div style="clear: both;"></div>
-	<div class="middle" style="margin-top: 20px;">
-      <!-- chi tiet -->
-      <?php echo $record->description; ?>
-      <?php echo $record->content; ?>
-      <!-- chi tiet -->
-    </div>
-	<div class="fb-comments" data-href="http://devpro.edu.vn" data-width="" data-numposts="5"></div>
+
 </div>

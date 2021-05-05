@@ -176,9 +176,6 @@ label{
     line-height: 1.8em;
 }
 /* Icons */
-.footer-bottom a {
-
-}
 
 /* pop-up text */
 .footer-bottom a span {
@@ -739,6 +736,9 @@ top: 9%;
 .flickr-post ul li{
 	display:inline-block;
 	margin:5px 5px;
+}
+.top{
+	width: 700px;
 }
 .flickr-post ul li {
     display: inline-block;
