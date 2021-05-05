@@ -84,5 +84,12 @@
 			$query = $conn->query("select id from rating where product_id=$product_id and star=$star");
 			return $query->rowCount();
 		}
+		public function modelGetAllCategories(){
+			//lay bien ket noi csdl
+			$conn = Connection::getInstance();
+			//thuc hien truy van
+			$query = $conn->query("select * from products order by id desc");
+			return $query->fetchAll();
+		}
 	}
  ?>

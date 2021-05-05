@@ -26,9 +26,7 @@ $this->fileLayout = "LayoutTrangChu.php";
 					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 						<?php $categories = $this->modelCategories(); ?>
 						<?php foreach ($categories as $rowsCategory) : ?>
-							<?php $products = $this->modelProducts($rowsCategory->id);
-							// $items = $this->$products;
-							$count = 0; ?>
+							<?php $products = $this->modelProducts($rowsCategory->id); ?>
 
 							<?php foreach ($products as $rows) :  ?>
 

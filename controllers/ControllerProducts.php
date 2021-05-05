@@ -27,5 +27,15 @@
 			$this->modelRating();
 			header("location:index.php?controller=products&action=detail&id=$id");
 		}
+		public function allCategories(){
+			$category_id = isset($_GET["id"]) ? $_GET["id"] : 0;
+			//quy dinh so ban ghi tren mot trang
+			$recordPerPage = 40;
+			//tinh so trang
+			$numPage = ceil($this->modelTotalRecord()/$recordPerPage);
+			//lay du lieu tu model
+			$data = $this->modelGetAllCategories();
+			$this->loadView("ViewCategory.php",array("data"=>$data,"numPage"=>$numPage));
+		}
 	}
  ?>
