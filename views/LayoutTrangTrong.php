@@ -80,24 +80,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <ul class="dropdown-menu multi-column columns-3">
                     <div class="row">
                       <div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-                        <a href="mens.html"><img src="assets/frontend/images/woo1.jpg" alt=" " /></a>
+                        <a href="LayoutMen.php"><img src="assets/frontend/images/woo1.jpg" alt=" " /></a>
                       </div>
                       <div class="col-sm-3 multi-gd-img">
                         <ul class="multi-column-dropdown">
-                          <li><a href="mens.html">Clothing</a></li>
-                          <li><a href="mens.html">Wallets</a></li>
-                          <li><a href="mens.html">Footwear</a></li>
-                          <li><a href="mens.html">Watches</a></li>
-                          <li><a href="mens.html">Shirts</a></li>
-                          <li><a href="mens.html">Bags</a></li>
-                          <li><a href="mens.html">Caps & Hats</a></li>
+                          <li><a href="LayoutMen.php">Clothing</a></li>
+                          <li><a href="LayouMen.php">Wallets</a></li>
+                          <li><a href="LayouMen.php">Footwear</a></li>
+                          <li><a href="LayouMen.php">Watches</a></li>
+                          <li><a href="LayouMen.php">Shirts</a></li>
+                          <li><a href="LayouMen.php">Bags</a></li>
+                          <li><a href="LayouMen.php">Caps & Hats</a></li>
                         </ul>
                       </div>
                       <div class="col-sm-3 multi-gd-img">
                         <ul class="multi-column-dropdown">
-                          <li><a href="mens.html">Sunglasses</a></li>
-                          <li><a href="mens.html">Beauty</a></li>
-                          <li><a href="mens.html">Swimwear</a></li>
+                          <li><a href="LayouMen.php">Sunglasses</a></li>
+                          <li><a href="LayouMen.php">Beauty</a></li>
+                          <li><a href="LayouMen.php">Swimwear</a></li>
                         </ul>
                       </div>
                       <div class="clearfix"></div>
@@ -105,29 +105,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   </ul>
                 </li>
                 <li class="dropdown menu__item">
-                  <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">women's wear <span class="caret"></span></a>
+                  <a href="LayoutWomen.php" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">women's wear <span class="caret"></span></a>
                   <ul class="dropdown-menu multi-column columns-3">
                     <div class="row">
                       <div class="col-sm-3 multi-gd-img">
                         <ul class="multi-column-dropdown">
-                          <li><a href="womens.html">Clothing</a></li>
-                          <li><a href="womens.html">Wallets</a></li>
-                          <li><a href="womens.html">Footwear</a></li>
-                          <li><a href="womens.html">Watches</a></li>
-                          <li><a href="womens.html">Shirts</a></li>
-                          <li><a href="womens.html">Bags</a></li>
-                          <li><a href="womens.html">Caps & Hats</a></li>
+                          <li><a href="LayoutWomen.php">Clothing</a></li>
+                          <li><a href="LayoutWomen.php">Wallets</a></li>
+                          <li><a href="LayoutWomen.php">Footwear</a></li>
+                          <li><a href="LayoutWomen.php">Watches</a></li>
+                          <li><a href="LayoutWomen.php">Shirts</a></li>
+                          <li><a href="LayoutWomen.php">Bags</a></li>
+                          <li><a href="LayoutWomen.php">Caps & Hats</a></li>
                         </ul>
                       </div>
                       <div class="col-sm-3 multi-gd-img">
                         <ul class="multi-column-dropdown">
-                          <li><a href="womens.html">Sunglasses</a></li>
-                          <li><a href="womens.html">Beauty</a></li>
-                          <li><a href="womens.html">Swimwear</a></li>
+                          <li><a href="LayoutWomen.php">Sunglasses</a></li>
+                          <li><a href="LayoutWomen.php">Beauty</a></li>
+                          <li><a href="LayoutWomen.php">Swimwear</a></li>
                         </ul>
                       </div>
                       <div class="col-sm-6 multi-gd-img multi-gd-text ">
-                        <a href="womens.html"><img src="assets/frontend/images/woo.jpg" alt=" " /></a>
+                        <a href="LayoutWomen.php"><img src="assets/frontend/images/woo.jpg" alt=" " /></a>
                       </div>
                       <div class="clearfix"></div>
                     </div>
@@ -185,6 +185,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
       </div>
       <div class="clearfix"></div>
+     
     </div>
   </div>
   <!-- nos laf nav -->
