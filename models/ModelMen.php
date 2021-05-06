@@ -14,5 +14,12 @@
 			$query = $conn->query("select * from categories where parent_id = 0 order by id desc");
 			return $query->fetchAll();
 		}
+		public function modelGetAllCategoriesMen(){
+			//lay bien ket noi csdl
+			$conn = Connection::getInstance();
+			//thuc hien truy van
+			$query = $conn->query("select * from products order by id desc limit 0,7");
+			return $query->fetchAll();
+		}
 	}
  ?>

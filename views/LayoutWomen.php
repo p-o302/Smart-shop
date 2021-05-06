@@ -1,28 +1,40 @@
 <?php
-//load file LayoutTrangChu.php
-$this->fileLayout = "LayoutTrangTrong.php";
+	$this->fileLayout = "LayoutTrangTrong.php";
 ?>
+<!-- banner -->
 <div class="page-head">
 	<div class="container">
 		<h3>Women's Wear</h3>
 	</div>
 </div>
-<div class="container">
-<div class="col-md-8 products-right">
+<!-- //banner -->
+<!-- mens -->
+<div class="men-wear">
+	<div class="container">
+		<div class="col-md-8 products-right">
 			<h5>Product Compare(0)</h5>
 			<div class="sort-grid">
 				<div class="sorting">
 					<h6>Sort By</h6>
-					<select id="country1" onchange="location.href = 'index.php?controller=products&action=category&id=<?php echo $category_id; ?>&order='+this.value;" class="frm-field required sect">
+					<select id="country1" class="frm-field required sect" onchange="location.href = 'index.php?controller=products&action=category&id=<?php echo $category_id; ?>&order='+this.value;">
 						<option value="0">Default</option>
-						<option value="nameAsc">Name(A - Z)</option> 
-						<option value="nameDesc">Name(Z - A)</option>
 						<option value="priceDesc">Price(High - Low)</option>
-						<option value="priceAsc">Price(Low - High)</option>			
+						<option value="priceAsc">Price(Low - High)</option>	
+						<option value="nameAsc">Model(A - Z)</option>
+						<option value="nameDesc">Model(Z - A)</option>					
 					</select>
 					<div class="clearfix"></div>
 				</div>
-				
+				<div class="sorting">
+					<h6>Showing</h6>
+					<select id="country2" onchange="change_country(this.value)" class="frm-field required sect">
+						<option value="null">7</option>
+						<option value="null">14</option> 
+						<option value="null">28</option>					
+						<option value="null">35</option>								
+					</select>
+					<div class="clearfix"></div>
+				</div>
 				<div class="clearfix"></div>
 			</div>
 			<div class="men-wear-top">
@@ -46,21 +58,20 @@ $this->fileLayout = "LayoutTrangTrong.php";
 							});
 						});
 				</script>
-				<div  id="top" class="callbacks_container">
+				<div class="men-left"><div  id="top" class="callbacks_container" >
 					<ul class="rslides" id="slider3">
 						<li>
-							<img class="img-responsive" src="assets/upload/products/1619172926_men1.jpg"/>
+							<img class="img-responsive" src="assets/frontend/images/men11.jpg" alt=" "/>
 						</li>
 						<li>
-							<img class="img-responsive" src="assets/upload/products/1619172926_g6.jpg"/>
+							<img class="img-responsive" src="assets/frontend/images/men21.jpg" alt=" "/>
 						</li>
 						<li>
-							<img class="img-responsive" src="assets/upload/products/1619172926_g2.jpg"/>
+							<img class="img-responsive" src="assets/frontend/images/men11.jpg" alt=" "/>
 						</li>
 						<li>
-							<img class="img-responsive" src="assets/upload/products/1619172926_b18.jpg"/>
+							<img class="img-responsive" src="assets/frontend/images/men21.jpg" alt=" "/>
 						</li>
-						
 					</ul>
 				</div>
 				<div class="clearfix"></div>
@@ -78,109 +89,50 @@ $this->fileLayout = "LayoutTrangTrong.php";
 					odit aut fugit. </p>
 				</div>
 				<div class="clearfix"></div>
-			</div>
-				<div class="col-md-4 product-men no-pad-men">
-                <?php $categories = $this->modelCategories(); ?>
-						<?php foreach ($categories as $rowsCategory) : ?>
-							<?php $products = $this->modelProducts($rowsCategory->id); ?>
-							<?php foreach ($products as $rows) :  ?>
-								<div class="col-md-3 product-men">
-									<style>
-										.product-men {
-											height: 334px !important;
-											margin-bottom: 80px;
-										}
-										.product-men img {
-											width: 100%;
-											height: 250px !important;
-										}
-									</style>
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item">
-											<img src="assets/upload/products/<?php echo $rows->photo; ?>" alt="" class="pro-image-front">
-											<img src="assets/upload/products/<?php echo $rows->photo; ?>" alt="" class="pro-image-back">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-											<span class="product-new-top">New</span>
-
-										</div>
-										<div class="item-info-product ">
-											<h4><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>"><?php echo $rows->name; ?></a></h4>
-											<div class="info-product-price">
-												<span class="item_price">$<?php echo number_format($rows->price - ($rows->price * $rows->discount / 100)); ?></span>
-												<del>$ <?php echo number_format($rows->price); ?></del>
-											</div>
-											<a href="index.php?controller=cart&action=create&id=<?php echo $rows->id; ?>" class="item_add single-item hvr-outline-out button2">Add to cart</a>
-										</div>
-									</div>
-								</div>
-
-							<?php endforeach; ?>
-						<?php endforeach; ?>
-				</div>
-				
+			</div></div>
 				
 				<div class="clearfix"></div>
 		</div>
+		<!-- <div class="col-md-4 ads" style=" visibility:visible;">
+			<img src="assets/frontend/images/ads.png" alt="">
+		</div> -->
 		<div class="clearfix"></div>
 		<div class="single-pro">
-        <?php $categories = $this->modelCategories(); ?>
-						<?php foreach ($categories as $rowsCategory) : ?>
-							<?php $products = $this->modelProducts($rowsCategory->id); ?>
-
-							<?php foreach ($products as $rows) :  ?>
-
-								<div class="col-md-3 product-men">
-									<style>
-										.product-men {
-											height: 334px !important;
-											margin-bottom: 80px;
-										}
-
-										.product-men img {
-											width: 100%;
-											height: 250px !important;
-										}
-									</style>
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item">
-											<img src="assets/upload/products/<?php echo $rows->photo; ?>" alt="" class="pro-image-front">
-											<img src="assets/upload/products/<?php echo $rows->photo; ?>" alt="" class="pro-image-back">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-											<span class="product-new-top">New</span>
-
-										</div>
-										<div class="item-info-product ">
-											<h4><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>"><?php echo $rows->name; ?></a></h4>
-											<div class="info-product-price">
-												<span class="item_price">$<?php echo number_format($rows->price - ($rows->price * $rows->discount / 100)); ?></span>
-												<del>$ <?php echo number_format($rows->price); ?></del>
-											</div>
-											<a href="index.php?controller=cart&action=create&id=<?php echo $rows->id; ?>" class="item_add single-item hvr-outline-out button2">Add to cart</a>
-										</div>
-									</div>
+			<?php $data = $this->modelGetAllCategoriesWomen(); ?>
+			<?php foreach($data as $rows):?>
+			<div class="col-md-3 product-men" style="padding-top: 10px;">
+				<div class="men-pro-item simpleCart_shelfItem">
+					<div class="men-thumb-item">
+						<img src="assets/upload/products/<?php echo $rows->photo; ?>" alt="" class="pro-image-front">
+						<img src="assets/upload/products/<?php echo $rows->photo; ?>" alt="" class="pro-image-back">
+							<div class="men-cart-pro">
+								<div class="inner-men-cart-pro">
+									<a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>" class="link-product-add-cart">Quick View</a>
 								</div>
-
-							<?php endforeach; ?>
-						<?php endforeach; ?>
+							</div>
+							<span class="product-new-top">New</span>				
+					</div>
+					<div class="item-info-product ">
+						<h4><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>"><?php echo $rows->name;?></a></h4>
+						<div class="info-product-price">
+							<span class="item_price">$<?php echo number_format($rows->price - ($rows->price * $rows->discount / 100)); ?></span>
+							<del>$<?php echo number_format($rows->price); ?></del>
+						</div>
+						<a href="index.php?controller=cart&action=create&id=<?php echo $rows->id; ?>" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+					</div>
+				</div>
+			</div>
+			<?php endforeach;?>
 			<div class="clearfix"></div>
 		</div>
 		<div class="pagination-grid text-right">
-        <style type="text/css">
-                .pagination{padding:0px; margin:0px;}
-            </style>
-            <ul class="pagination">
-                <li class="page-item"><a href="#" class="page-link">Trang</a></li>
-                <?php for($i = 1; $i <= $numPage; $i++): ?>
-                  <li class="page-item"><a class="page-link" href="index.php?controller=products&action=category&id=<?php echo $category_id; ?>&p=<?php echo $i; ?>"><?php echo $i; ?></a></li>
-                <?php endfor; ?>
-            </ul>
+			<ul class="pagination paging">
+				<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+				<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+				<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+			</ul>
 		</div>
-</div>
+	</div>
+</div>	
+<!-- //mens -->
+<!-- //product-nav -->

@@ -5,7 +5,16 @@
 		use ModelCategories;
 		public function index(){
 			$this->loadView("LayoutWomen.php");
-			// header("location:index.php?controller=women");
+		}
+		public function allCategories(){
+			$category_id = isset($_GET["id"]) ? $_GET["id"] : 0;
+			//quy dinh so ban ghi tren mot trang
+			$recordPerPage = 10;
+			//tinh so trang
+			$numPage = ceil($this->modelTotalRecord()/$recordPerPage);
+			//lay du lieu tu model
+			$data = $this->modelGetAllCategoriesWomen();
+			$this->loadView("LayoutWomen.php",array("data"=>$data,"numPage"=>$numPage));
 		}
 	}
  ?>

@@ -39,7 +39,7 @@
                     <td>
                         <a href="index.php?controller=products&action=detail&id=<?php echo $product["id"]; ?>"><?php echo $product["name"]; ?></a></td>
                     <td>
-                         <?php echo number_format($product["price"]-($product["price"]*$product["discount"])/100); ?>dd </td>
+                         <?php echo number_format($product["price"]-($product["price"]*$product["discount"])/100); ?> </td>
                     <td>
                         <input type="number" id="qty" min="1"style="width: 200px;" value="<?php echo $product["number"]; ?>" name="product_<?php echo $product["id"]; ?>" required="Không thể để trống"></td>
                     <td>
@@ -69,8 +69,8 @@
           </form>
           <?php if($this->cartNumber()>0): ?>
           <div class="total-cart"> <h3>Tổng tiền thanh toán:</h3>
-            <?php echo number_format($this->cartTotal()); ?> <br>
-            <a href="index.php?controller=cart&action=chekout" class="button4 black">Thanh toán</a> </div>
+           $ <?php echo number_format($this->cartTotal()); ?> <br>
+            <a href="index.php?controller=cart&action=checkout" class="button4 black">Thanh toán</a> </div>
             <?php endif; ?>
 </div>
 <style>

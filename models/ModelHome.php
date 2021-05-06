@@ -13,6 +13,11 @@
 			$query = $conn->query("select * from categories where id in (select category_id from products) order by id desc");
 			return $query->fetchAll();
 		}
+		public function modelProducts0($category_id){
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from products where category_id=$category_id order by id desc");
+			return $query->fetchAll();
+		}
 		//lay cac san pham thuoc danh muc
 		public function modelProducts($category_id){
 			$conn = Connection::getInstance();

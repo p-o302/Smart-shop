@@ -79,7 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<ul class="nav navbar-nav menu__list">
 								<li class="active menu__item menu__item--current"><a class="menu__link" href="index.php?controller=home">Home <span class="sr-only">(current)</span></a></li>
 								<li class="dropdown menu__item">
-									<a href="index.php?controller=men" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">men's wear <span class="caret"></span></a>
+									<a href="index.php?controller=products&action=allcategory" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">men's wear <span class="caret"></span></a>
 									<ul class="dropdown-menu multi-column columns-3">
 										<div class="row">
 											<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
