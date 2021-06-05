@@ -6,7 +6,7 @@ $this->fileLayout = "LayoutTrangTrong.php";
     <div class="tabs-container">
         <div class="row" style="margin-top:10px;">
             <div class="head-tabs head-tab1 col-lg-8">
-                <h2>Tìm kiếm - Giá từ <?php echo number_format($fromPrice); ?> đ đến <?php echo number_format($toPrice); ?> đ</h2>
+                <h2>Tìm kiếm - Giá từ  $<?php echo number_format($fromPrice); ?> đến $<?php echo number_format($toPrice); ?> </h2>
             </div>
             <div class="clearfix"></div>
         </div>

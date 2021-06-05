@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../assets/admin/layout1/css/bootstrap.min.css">
 </head>
-<body>
-<div class="container" style="margin-top:40px;">
+<body style="background-image: url('../assets/admin/layout1/images/download.jpg'); background-size: cover;">
+<div class="container" style="margin-top:40px;" >
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<div class="panel panel-primary">

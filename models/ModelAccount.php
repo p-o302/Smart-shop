@@ -3,8 +3,6 @@
 		public function modelRegister(){
 			$name = $_POST["name"];
 			$email = $_POST["email"];
-			// $address = $_POST["address"];
-			// $phone = $_POST["phone"];
 			$password = $_POST["password"];
 			//ma hoa password
 			$password = md5($password);

@@ -165,7 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</ul>
 								</li>
-								<li class=" menu__item"><a class="menu__link" href="contact.html">contact us</a></li>
+								<li class=" menu__item"><a class="menu__link" href="index.php?controller=contact">contact us</a></li>
 							</ul>
 						</div>
 					</div>
